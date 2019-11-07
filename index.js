@@ -21,6 +21,7 @@ app.post('/*', (req, res) => {
         body: req.body
     }
     res.json(resp)
+    res.status(400)
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
