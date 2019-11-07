@@ -10,7 +10,8 @@ app.get('/*', (req, res) => {
         query: req.query,
        path: req.path
     }
-    res.json(resp)
+   
+     res.status(400).json(resp)
 })
 
 app.post('/*', (req, res) => {
